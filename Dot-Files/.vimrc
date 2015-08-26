@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'mileszs/ack.vim'
 " Plugin 'Shougo/vimfiler.vim'
 " Plugin 'Shougo/unite.vim'
 " Plugin 'Shougo/vimproc.vim'
@@ -81,8 +82,8 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1 " for air line status bar
 let g:airline_powerline_fonts = 1
 "let g:mustache_abbreviations = 1
-nnoremap <C-n> :bnext<CR>
-nnoremap <S-n> :bprevious<CR>
+nnoremap <C-n> :bnext<CR> " move to the next buffer SHIFT + n
+nnoremap <S-n> :bprevious<CR> " Move to teh previous buffer SHIFT + n
 "set list listchars=tab:»-,trail:·,extends:»,precedes:« "-- from the ... to appear while spacing in VIM mode
 set lines=95 columns=300 " to make the macvim window size large
 set guifont=Anonymous\ Pro\ for\ Powerline:h14
